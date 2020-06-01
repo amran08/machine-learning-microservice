@@ -1,7 +1,0 @@
-sh run_kubernetes.sh
-Error from server (AlreadyExists): deployments.apps "mlcluster" already exists
-NAME                         READY   STATUS    RESTARTS   AGE
-mlcluster-6b68bf76f8-smhsr   1/1     Running   0          11m
-Starting to serve on 127.0.0.1:8001
-
-check kuberneties_out.png for predict results

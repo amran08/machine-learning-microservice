@@ -42,4 +42,4 @@ Udacity project submission for Microservices at Scale Using Kubernetes
 * `run_docker.sh` a script that builds the docker image and runs a container
 * `run_kubernates.sh` deploys the project to a Kubernetes cluster
 * `upload_docker.sh` uploads the image to dockerhub
-* `docker_out.txt` and `kubernetes_out.png` contains output of run_docker and run_kubernetes commands
+* `docker_out.txt` contains output of run_docker and run_kubernetes commands
