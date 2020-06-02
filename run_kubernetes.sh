@@ -16,7 +16,9 @@ kubectl create deployment mlcluster --image=$dockerpath
 kubectl get pods
 # Step 4:
 # Forward the container port to a host
-kubectl proxy
+#kubectl proxy
+
+kubectl port-forward deployment/mlcluster  8001:80
 
 export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
 echo Name of the Pod: $POD_NAME
