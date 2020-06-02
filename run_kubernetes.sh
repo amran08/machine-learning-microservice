@@ -18,3 +18,5 @@ kubectl get pods
 # Forward the container port to a host
 kubectl proxy
 
+export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+echo Name of the Pod: $POD_NAME
